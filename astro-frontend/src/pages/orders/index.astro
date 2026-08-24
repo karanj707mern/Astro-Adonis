@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+import MainLayout from '../../layouts/MainLayout.astro'
+import OrdersPageInner from '../../components/pages/orders/OrdersPageInner'
+---
+<MainLayout title="Orders">
+  <OrdersPageInner client:load />
+</MainLayout>

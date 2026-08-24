@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+import MainLayout from '../layouts/MainLayout.astro'
+import LoginPage from '../components/pages/auth/page'
+---
+<MainLayout title="Sign In">
+  <LoginPage client:only="react" />
+</MainLayout>

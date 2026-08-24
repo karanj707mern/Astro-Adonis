@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+import MainLayout from '../layouts/MainLayout.astro'
+import WishlistClient from '../components/pages/wishlist/WishlistClient'
+---
+<MainLayout title="Wishlist">
+  <WishlistClient client:load />
+</MainLayout>

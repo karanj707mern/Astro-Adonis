@@ -1,0 +1,8 @@
+---
+export const prerender = false;
+import MainLayout from '../layouts/MainLayout.astro'
+import ProfilePage from '../components/pages/profile/page'
+---
+<MainLayout title="My Profile">
+  <ProfilePage client:only="react" />
+</MainLayout>

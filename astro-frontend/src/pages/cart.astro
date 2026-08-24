@@ -1,0 +1,11 @@
+---
+export const prerender = false;
+import MainLayout from '../layouts/MainLayout.astro'
+import CartPageShell from '../components/pages/cart/CartPageShell'
+import CartPageInner from '../components/pages/cart/CartPageInner'
+---
+<MainLayout title="Cart">
+  <CartPageShell client:load>
+    <CartPageInner />
+  </CartPageShell>
+</MainLayout>

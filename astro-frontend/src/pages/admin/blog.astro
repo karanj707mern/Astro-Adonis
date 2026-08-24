@@ -1,0 +1,9 @@
+---
+export const prerender = false;
+import AdminLayout from '../../layouts/AdminLayout.astro'
+import BlogManager from '../../components/blog/BlogManager'
+---
+
+<AdminLayout title="Admin">
+  <BlogManager client:only="react" />
+</AdminLayout>

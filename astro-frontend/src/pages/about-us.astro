@@ -1,0 +1,8 @@
+---
+export const prerender = true;
+import MainLayout from '../layouts/MainLayout.astro'
+import InfoPage from '../components/InfoPage.astro'
+---
+<MainLayout title="About Us">
+  <InfoPage pageKey="about-us" slot />
+</MainLayout>
