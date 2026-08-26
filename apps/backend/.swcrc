@@ -1,0 +1,23 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true,
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "decoratorMetadata": true,
+      "legacyDecorator": true,
+      "verbatimModuleSyntax": true,
+      "useDefineForClassFields": true
+    },
+    "experimental": {
+      "keepImportAttributes": true
+    },
+    "keepClassNames": true
+  },
+  "module": {
+    "type": "es6"
+  }
+}
